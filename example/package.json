@@ -1,8 +1,8 @@
 {
   "name": "react-notify-bootstrap-example",
-  "homepage": "https://github.com/atasoyfurkan.github.io/react-notify-bootstrap",
+  "homepage": "https://atasoyfurkan.github.io/react-notify-bootstrap",
   "version": "0.0.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "bootstrap": "^4.4.1",
     "react-notify-bootstrap": "file:..",

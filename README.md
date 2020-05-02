@@ -1,8 +1,15 @@
 # react-notify-bootstrap
 
-> Simple bootstrap notification for react app
+> Simple Bootstrap notification for React app
+
 
 [![NPM](https://img.shields.io/npm/v/react-notify-bootstrap.svg)](https://www.npmjs.com/package/react-notify-bootstrap) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+
+[![NPM(https://github.com/atasoyfurkan/react-notify-bootstrap/blob/master/demo.gif)](https://github.com/atasoyfurkan/react-notify-bootstrap/blob/master/demo.gif)]
+
+
+> react-notify-bootstrap allow you to add bootstrap notification to your app with ease.
+
 
 ## Install
 
@@ -14,16 +21,32 @@ npm install --save react-notify-bootstrap
 
 ```jsx
 import React, { Component } from 'react'
+import Notification, { notify } from 'react-notify-bootstrap'
 
-import MyComponent from 'react-notify-bootstrap'
-import 'react-notify-bootstrap/dist/index.css'
+class App extends Component {
+  sendNotification = () => {
+    notify({ text: "Notification was sent successfully", variant: "success" });
+  };
 
-class Example extends Component {
   render() {
-    return <MyComponent />
+    return (
+      <React.Fragment>
+        <button className="btn" onClick={this.sendNotification}>Notify!</button>
+
+        <Notification />
+      </React.Fragment>
+    )
   }
 }
 ```
+## Demo
+[Demo](https://atasoyfurkan.github.io/react-notify-bootstrap/)
+
+
+
+## Example Code
+[Example-github](https://github.com/atasoyfurkan/react-notify-bootstrap/tree/master/example)
+
 
 ## License
 
