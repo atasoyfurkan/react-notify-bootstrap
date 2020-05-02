@@ -5,7 +5,7 @@
 
 [![NPM](https://img.shields.io/npm/v/react-notify-bootstrap.svg)](https://www.npmjs.com/package/react-notify-bootstrap) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
-[![NPM(https://github.com/atasoyfurkan/react-notify-bootstrap/blob/master/demo.gif)](https://github.com/atasoyfurkan/react-notify-bootstrap/blob/master/demo.gif)]
+![NPM](https://raw.githubusercontent.com/atasoyfurkan/react-notify-bootstrap/master/demo.gif)
 
 
 > react-notify-bootstrap allow you to add bootstrap notification to your app with ease.
@@ -39,14 +39,44 @@ class App extends Component {
   }
 }
 ```
+
 ## Demo
 [Demo](https://atasoyfurkan.github.io/react-notify-bootstrap/)
-
 
 
 ## Example Code
 [Example-github](https://github.com/atasoyfurkan/react-notify-bootstrap/tree/master/example)
 
+
+## API
+
+<table>
+  <tr>
+    <th>Props</th>
+    <th>Type</th>
+    <th>Default</th>
+  </tr>
+  <tr>
+    <td>options</td>
+    <td>object</td>
+    <td>-</td>
+  </tr>
+  <tr>
+    <td>options.animation</td>
+    <td>bool</td>
+    <td>false</td>
+  </tr>
+  <tr>
+    <td>options.delay</td>
+    <td>number</td>
+    <td>4000</td>
+  </tr>
+  <tr>
+    <td>options.autohide</td>
+    <td>bool</td>
+    <td>true</td>
+  </tr>
+</table>
 
 ## License
 

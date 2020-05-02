@@ -32,10 +32,6 @@ export default class Notification extends Component {
     })
   };
 
-  static configure = function (ref) {
-    notification = ref.current;
-  };
-
   state = {
     show: false,
     variant: variants["primary"],
