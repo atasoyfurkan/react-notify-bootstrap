@@ -4,10 +4,8 @@
   "version": "0.0.0",
   "private": false,
   "dependencies": {
-    "bootstrap": "^4.4.1",
     "react-notify-bootstrap": "file:..",
     "react": "file:../node_modules/react",
-    "react-bootstrap": "^1.0.1",
     "react-dom": "file:../node_modules/react-dom",
     "react-scripts": "file:../node_modules/react-scripts"
   },

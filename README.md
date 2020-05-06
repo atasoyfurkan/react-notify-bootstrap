@@ -55,26 +55,37 @@ class App extends Component {
     <th>Props</th>
     <th>Type</th>
     <th>Default</th>
+    <th>Description</th>
   </tr>
   <tr>
     <td>options</td>
     <td>object</td>
     <td>-</td>
+    <td>-</td>    
   </tr>
   <tr>
     <td>options.animation</td>
     <td>bool</td>
     <td>false</td>
+    <td>Apply a CSS fade transition to the toast</td>
   </tr>
   <tr>
     <td>options.delay</td>
     <td>number</td>
     <td>4000</td>
+    <td>Delay hiding the toast (ms)</td>
   </tr>
   <tr>
     <td>options.autohide</td>
     <td>bool</td>
     <td>true</td>
+    <td>Auto hide the toast</td>
+  </tr>
+  <tr>
+    <td>onClose</td>
+    <td>function</td>
+    <td>-</td>
+    <td>A Callback fired when the close button is clicked</td>
   </tr>
 </table>
 

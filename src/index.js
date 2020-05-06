@@ -29,7 +29,8 @@ export default class Notification extends Component {
       animation: propTypes.bool,
       delay: propTypes.number,
       autohide: propTypes.bool
-    })
+    }),
+    onClose: propTypes.func
   };
 
   state = {
@@ -48,6 +49,7 @@ export default class Notification extends Component {
 
   onClose = () => {
     this.setState({ show: false });
+    if (this.props.onClose) this.props.onClose();
   }
 
   render() {
