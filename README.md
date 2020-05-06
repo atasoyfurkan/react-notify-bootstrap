@@ -50,6 +50,8 @@ class App extends Component {
 
 ## API
 
+### Notification
+
 <table>
   <tr>
     <th>Props</th>
@@ -81,13 +83,38 @@ class App extends Component {
     <td>true</td>
     <td>Auto hide the toast</td>
   </tr>
+</table>
+
+### notify
+
+<table>
+  <tr>
+    <th>Arguments</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>text</td>
+    <td>string</td>
+    <td>""</td>
+    <td>-</td>    
+  </tr>
+  <tr>
+    <td>variant</td>
+    <td>string</td>
+    <td>"primary"</td>
+    <td>-</td>    
+  </tr>
   <tr>
     <td>onClose</td>
     <td>function</td>
     <td>-</td>
     <td>A Callback fired when the close button is clicked</td>
   </tr>
-</table>
+ </table>
+
+
 
 ## License
 

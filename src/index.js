@@ -17,10 +17,10 @@ const variants = {
 
 let openNotification;
 
-export const notify = ({ text = "", variant = "primary" }) => {
+export const notify = ({ text = "", variant = "primary", onClose }) => {
   if (!openNotification) throw new Error("Can't use notify before declaration");
 
-  openNotification(text, variant);
+  openNotification(text, variant, onClose);
 }
 
 export default class Notification extends Component {
@@ -29,27 +29,27 @@ export default class Notification extends Component {
       animation: propTypes.bool,
       delay: propTypes.number,
       autohide: propTypes.bool
-    }),
-    onClose: propTypes.func
+    })
   };
 
   state = {
     show: false,
     variant: variants["primary"],
-    text: ""
+    text: "",
+    onClose: null
   };
 
   componentWillMount() {
     openNotification = this.open;
   }
 
-  open = (text = "", variant = "primary") => {
-    this.setState({ show: true, text: text, variant: variants[variant] });
+  open = (text = "", variant = "primary", onClose) => {
+    this.setState({ show: true, text: text, variant: variants[variant], onClose: onClose });
   }
 
   onClose = () => {
     this.setState({ show: false });
-    if (this.props.onClose) this.props.onClose();
+    if (this.state.onClose) this.state.onClose();
   }
 
   render() {
