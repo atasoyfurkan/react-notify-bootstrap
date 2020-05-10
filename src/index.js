@@ -57,11 +57,12 @@ export default class Notification extends Component {
     const { options } = this.props;
     const { show, variant, text } = this.state;
 
-    let animation = false, delay = 4000, autohide = true;
+    let animation = false, delay = 4000, autohide = true, position = "bottom";
     if (options) {
       animation = options.animation || false;
       delay = options.delay || 4000;
       autohide = options.autohide || true;
+      position = options.position || "bottom";
     }
 
     return (
@@ -70,7 +71,7 @@ export default class Notification extends Component {
           style={{
             background: variant,
             position: "fixed",
-            bottom: 20,
+            [position]: 20,
             zIndex: 999
           }}
           onClose={this.onClose}

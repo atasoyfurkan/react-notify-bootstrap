@@ -65,6 +65,12 @@ class App extends Component {
     <td>-</td>
     <td>-</td>    
   </tr>
+   <tr>
+    <td>options.position</td>
+    <td>string</td>
+    <td>bottom</td>
+    <td>-</td>
+  </tr>
   <tr>
     <td>options.animation</td>
     <td>bool</td>
