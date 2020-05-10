@@ -39,7 +39,8 @@ export default class Notification extends Component {
     onClose: null
   };
 
-  componentWillMount() {
+  constructor() {
+    super();
     openNotification = this.open;
   }
 
